@@ -38,7 +38,6 @@ The analysis combines data engineering, exploratory analysis, visualization, and
 
 ```text
 travel_fatigue/
-├── v1/
-│   ├── notebooks/     # Analysis notebooks
-│   ├── data/          # Raw input datasets used in the study
-│   └── README.md
+├── notebooks/     # Analysis notebooks
+├── data/          # Raw input datasets used in the study
+├── README.md
