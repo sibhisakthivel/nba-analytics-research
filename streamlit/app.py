@@ -46,23 +46,29 @@ st.markdown("""
         text-align: center;
     }
     .portfolio-description {
-        font-size: 1.6rem !important;
+        font-size: 1.75rem !important;
+        line-height: 1.6 !important;
+    }
+    /* Override .stMarkdown p for the description (higher specificity) */
+    .stMarkdown p.portfolio-description {
+        font-size: 1.75rem !important;
         line-height: 1.6 !important;
     }
     main .block-container {
-        max-width: 72rem !important;
+        max-width: 88rem !important;
         padding-left: 2rem !important;
         padding-right: 2rem !important;
     }
-    /* Custom study dropdowns - bar style like Streamlit expanders, full title visible */
+    /* Custom study dropdowns - bar style, full title inside bar, ">" aligned across bars */
     .study-details {
         width: 100%;
         margin-bottom: 0.75rem;
     }
     .study-details summary {
-        display: block;
+        display: flex;
+        align-items: center;
         padding: 1rem 1.25rem;
-        font-size: 1.9rem;
+        font-size: 1.7rem;
         line-height: 1.4;
         cursor: pointer;
         list-style: none;
@@ -72,6 +78,7 @@ st.markdown("""
         border: 1px solid rgba(151, 166, 195, 0.25);
         border-radius: 0.5rem;
         transition: background 0.15s ease;
+        box-sizing: border-box;
     }
     .study-details summary:hover {
         background: rgba(151, 166, 195, 0.22);
@@ -82,9 +89,12 @@ st.markdown("""
     .study-details summary::-webkit-details-marker { display: none; }
     .study-details summary::before {
         content: ">";
-        margin-right: 0.5rem;
+        flex-shrink: 0;
+        width: 1.5rem;
+        min-width: 1.5rem;
+        text-align: left;
     }
-    .study-details[open] summary::before { content: "\\25BC"; }
+    .study-details[open] summary::before { content: "\\25BC"; width: 1.5rem; min-width: 1.5rem; }
     .study-content {
         padding: 1rem 1.25rem 1.5rem;
         background: rgba(151, 166, 195, 0.08);
@@ -109,7 +119,7 @@ st.markdown('''
 ''', unsafe_allow_html=True)
 st.markdown("---")
 st.markdown(
-    '<p class="portfolio-description">'
+    '<p class="portfolio-description" style="font-size: 1.75rem; line-height: 1.6;">'
     'A portfolio of NBA research studies driven by curiosity about what influences '
     'player performance, explored through data science with a strong emphasis on '
     'statistical testing and analytical rigor.</p>',
