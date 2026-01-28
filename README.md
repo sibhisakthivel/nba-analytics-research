@@ -2,7 +2,7 @@
 
 A collection of applied data science studies focused on developing a deeper, evidence-based understanding of NBA player and team performance through **statistical testing, hypothesis-driven analysis, and experimentation-style reasoning**.
 
-This research portfolio is designed to explore common narratives and assumptions in basketball analytics—such as performance streaks, fatigue effects, and contextual advantages—by rigorously evaluating them using statistical methods rather than intuition alone.
+This research portfolio is designed to explore common narratives and assumptions in basketball analytics, such as performance streaks, fatigue effects, and contextual advantages, by rigorously evaluating them using statistical methods rather than intuition alone.
 
 Across studies, the emphasis is on:
 - defining clear research questions,
