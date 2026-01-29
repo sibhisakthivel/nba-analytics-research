@@ -2,7 +2,7 @@
 
 This study examines how NBA travel demands, rest patterns, and schedule density influence team performance over the course of a season. Using historical NBA schedules and team-level game data, the analysis quantifies fatigue exposure and evaluates its impact on defensive efficiency and win probability.
 
-The project focuses on understanding whether structural scheduling factors—such as back-to-backs, compressed game stretches, and long travel sequences—produce measurable competitive advantages or disadvantages across teams.
+The project focuses on understanding whether structural scheduling factors, such as back-to-backs, compressed game stretches, and long travel sequences, produce measurable competitive advantages or disadvantages across teams.
 
 ## Core Questions
 

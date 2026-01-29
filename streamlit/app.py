@@ -103,8 +103,11 @@ st.markdown("""
         border-radius: 0 0 0.5rem 0.5rem;
     }
     .study-content h4 { margin-top: 1rem; margin-bottom: 0.5rem; }
-    .study-content h4:first-child { margin-top: 0; }
+    .study-content h4:first-of-type { margin-top: 0; }
     .study-content p, .study-content ul { margin-bottom: 0.75rem; font-size: 1.25rem; line-height: 1.6; }
+    .study-link { margin-top: 0; margin-bottom: 1rem; font-size: 1.1rem; }
+    .study-link a { color: #6ea8fe; text-decoration: none; }
+    .study-link a:hover { text-decoration: underline; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -122,7 +125,7 @@ st.markdown(
     '<p class="portfolio-description" style="font-size: 1.75rem; line-height: 1.6;">'
     'A portfolio of NBA research studies driven by curiosity about what influences '
     'player performance, explored through data science with a strong emphasis on '
-    'statistical testing and analytical rigor.</p>',
+    'statistical testing and analysis.</p>',
     unsafe_allow_html=True,
 )
 st.markdown("---")
@@ -135,6 +138,7 @@ st.markdown("""
 <details class="study-details">
 <summary>Study 1: NBA Scoring Streak Performance Analysis (v1)</summary>
 <div class="study-content">
+<p class="study-link"><a href="https://github.com/sibhisakthivel/nba-analytics-research/tree/main/studies/streak_performance/streak_analysis_v1" target="_blank" rel="noopener noreferrer">View study files →</a></p>
 <h4>Summary</h4>
 <p>This study tests whether NBA scoring streaks, "hot" or "cold" players, meaningfully
 affect next-game scoring once player-specific baselines and uncertainty are accounted for.
@@ -164,6 +168,7 @@ st.markdown("""
 <details class="study-details">
 <summary>Study 2: NBA Scoring Streak Performance Analysis (v2)</summary>
 <div class="study-content">
+<p class="study-link"><a href="https://github.com/sibhisakthivel/nba-analytics-research/tree/main/studies/streak_performance/streak_analysis_v2" target="_blank" rel="noopener noreferrer">View study files →</a></p>
 <h4>Summary</h4>
 <p>Building on v1, this study asks whether streaks add <strong>incremental explanatory value</strong>
 once core game context (opponent defensive strength, home/away, etc.) is included.
@@ -192,6 +197,7 @@ st.markdown("""
 <details class="study-details">
 <summary>Study 3: NBA Travel Fatigue & Schedule Density Analysis</summary>
 <div class="study-content">
+<p class="study-link"><a href="https://github.com/sibhisakthivel/nba-analytics-research/tree/main/studies/travel_fatigue" target="_blank" rel="noopener noreferrer">View study files →</a></p>
 <h4>Summary</h4>
 <p>This study examines how NBA travel, rest patterns, and schedule density affect
 team performance. Using historical schedules and team-level game data, it constructs
